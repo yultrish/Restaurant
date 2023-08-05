@@ -128,7 +128,7 @@ body{
 .front-page-btns{
       padding: 1rem 0 3rem 2rem;
       display: flex;
-      gap: 1rem;
+      gap: 2rem;
 }
 
 .front-page-btns button{
@@ -209,7 +209,7 @@ body{
 
 .food-list{
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .food-menu img{
@@ -371,7 +371,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     padding: 0 2rem;
     margin-top: 1rem;
 }
