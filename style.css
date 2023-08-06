@@ -1,7 +1,7 @@
 :root{
     --color-background: black;
     --color-light: aliceblue;
-    --color-primary: #fe6601;
+    --color-primary: #ecb679;
     --color-secondary: #ecb679;
     --border-radius-image: 50%;
 }
@@ -13,7 +13,7 @@
 
 body{
     background-color: unset;
-     font-family: "Montserrat", sans-serif;
+     font-family: sans-serif;
     line-height: 2rem;
 }
 
@@ -46,12 +46,13 @@ body{
     justify-content: space-between;
     align-items: center;
     color: var(--color-secondary);
-    padding: 1rem 3rem;
+    padding: 1rem 0;
 }
 
 .logo span{
     color: var(--color-primary);
     font-size: 4rem;
+    font-weight: 900;
     cursor: pointer;
 }
 
@@ -82,13 +83,17 @@ body{
     border-bottom: 2px solid var(--color-light);
 }
 
-
+.nav-bar ul li:hover{
+    background-color: cadetblue;
+    transition: all 0.30s;
+}
 
 .nav-bar a{
     text-decoration: none;
     color: var(--color-light);
     text-transform: uppercase;
     font-weight: lighter;
+    
     /* font-size: 1rem; */
 }
 
@@ -100,33 +105,44 @@ body{
     background-image: url(./img/main.jpeg);
     background-size: cover;
     background-attachment: fixed;
-    /* height: 150vh; */
+    /* height: 60vh; */
     white-space: nowrap;
-    /* padding-top: 50rem; */
+    padding-top: 5rem;
+    
     
 }
+.front-items{
+   margin: 40% 0 0rem 0;
+  
+   
+   color: var(--color-light);
+   display: flex;
+   flex-direction: column;
+    text-align: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
-.front-page-slogan{
-    padding: 0 2rem;
-    color: var(--color-light);
-    font-size: 1.2rem;
-    /* font-family: sans-serif; */
-    padding: 36rem 0 0 13rem;
-    font-weight: lighter;
-    /* text-align: center; */
-
+    border: 2px solid transparent;
+    /* background-color: #fe6601; */
 }
 
 .front-page-slogan h3:first-child{
     font-family:  Parisienne;
-    font-size: 4rem;
-    padding: 1rem 0;
+    font-size: 3rem;
+    padding: 1rem; 
+    margin-left: 1rem;
+   
+}
+
+.front-page-slogan p{
+width: 100%;
+font-size: 1.5rem;
+font-stretch: expanded;
+margin: 0 1rem;
+
 }
 
 .front-page-btns{
-      padding: 1rem 0 4rem 3rem;
-      display: flex;
-      gap: 2rem;
+       padding-bottom: 2rem;
 }
 
 .front-page-btns button{
@@ -138,11 +154,14 @@ body{
     font-weight: bolder;
     border-radius: 5px;
     cursor: pointer;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .front-page-btns button:last-child{
     background-color: var(--color-secondary);
     color: var(--color-background);
+    margin-left: 0.5rem;
 }
 
 .front-page-btns button:hover{
@@ -154,31 +173,37 @@ body{
     padding: 2rem;
     background-color: var(--color-primary);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+
     /* font-family: sans-serif; */
-    height: 30vh;
+    /* height: 10%; */
 }
 
 .delicious{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* font-size: 1.4rem; */
+    font-size: 1rem;
+    /* padding: 1rem; */
+    white-space: nowrap;
 }
 
 .reservation-btn{
     display: flex;
     justify-content: center;
-    padding: 2rem 0;
+    padding-top: 0.5rem;
 }
 
 .reservation-btn button{
     padding: 0.5rem;
     text-transform: uppercase;
     border: 2px solid;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1rem;
+    /* font-weight: bold; */
     background-color: unset;
     cursor: pointer;
+    text-align: center;
+    /* width: 11rem; */
+
 }
 
 .impressive{
@@ -187,17 +212,28 @@ body{
     justify-content: center;
     align-items: center;
     color: var(--color-light);
-    padding: 2rem;
-    font-size: 1.7rem;
+    padding: 1.5rem 2rem;
+    /* font-size: 1.7rem; */
 }
-
-
 .impressive span{
     color: var(--color-secondary);
     padding-top: 0.5rem;
-    border-bottom: 2px solid var(--color-secondary);
+    /* border-bottom: 2px solid var(--color-secondary); */
     font-family: Parisienne;
+    font-size: 1.5rem;
 }
+
+.line{
+    width: 60%;
+    height: 2px;
+    margin: 1.5rem 0;
+    background-color: var(--color-secondary);
+}
+
+.impressive p{
+    font-size: 1.8rem;
+}
+
 .food-menu{
     background-color: var(--color-background);
     color: var(--color-light);
@@ -211,11 +247,12 @@ body{
 }
 
 .food-menu img{
-    width: 130px;
-    height: 130px;
+    width: 110px;
+    height: 110px;
     border-radius: var(--border-radius-image);
     object-fit: cover;
     padding: 1rem 0;
+    margin-right: 0.7rem;
 }
 
 .food-list-text-price{
@@ -248,6 +285,7 @@ body{
 } 
 
 .today-choice-container{
+    width: 90%;
     padding: 2rem;
     margin:  auto;
     border: 2px solid var(--color-background);
@@ -312,28 +350,30 @@ body{
 
 .icon-info span:last-child{
     padding-top: 1.5rem;
+    margin-right: 1rem;
 }
 
 .form-left{
     padding: 2rem 0;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-
-}
 
 .form-left input, .form-left button, textarea{
-    padding: 1rem 0.5rem;
+    /* padding: 1rem 0.5rem; */
     background-color: black;
     border: 2px solid var(--color-light);
     font-weight: bold;
     font-size: 1.3rem;
     color: var(--color-light);
     cursor: pointer;
-    outline: none;
+   
+    margin-bottom: 1rem;
+}
+
+.form-left input, textarea{
+    width: 100%;
+    padding: 0.5rem 1rem;
+      outline: none;
 }
 
 .form-left input:focus{
@@ -344,6 +384,7 @@ form{
     font-size: 1.5rem;
     color: var(--color-secondary);
     border: 2px solid var(--color-secondary);
+    padding: 0.5rem;
 }
 
 footer{
@@ -352,7 +393,7 @@ footer{
 
 
 .copy-right, .logo-name{
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
     font-size: 1.2rem;
      display: flex;
     justify-content: center;
@@ -370,7 +411,7 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 0 2rem;
+    padding: 0 1rem;
     margin-top: 1rem;
 }
 
@@ -378,6 +419,7 @@ footer{
         padding: 0.6rem;
         font-size: 2rem;
         border-radius: 50%;
+        margin-right: 0.5rem;
 
     }
 
@@ -396,6 +438,18 @@ footer{
      footer i:last-child{
               background-color: firebrick;
      }
+
+
+     @media screen and (min-width:620px) {
+        .front-items{
+            margin-top: 85%;
+        }
+
+     .front-page-slogan h3:first-child{
+    font-family:  Parisienne; 
+     }
+
+    }
 
 @media screen and (min-width:900px){
 
@@ -434,22 +488,25 @@ footer{
         border-bottom: unset;
     }
 
-    .front-page-slogan{
-        display: inline-flex;
-        flex-direction: column;
-        /* padding: 2rem 2rem 1rem 11.5rem; */
-        
+    .front-items{
+        text-align: left;
+        margin-top: 35%;
+        margin-left: 10%;
+    }
+
+    .front-page-slogan:first-child{
+         padding: unset; 
+    margin-left: unset;
     }
 
     .front-page-slogan h3:first-child{
-        font-size: 5rem;
+    font-family:  Parisienne;
+    font-size: 3rem;
+    padding: 1rem; 
+    margin-left: 1rem;
+   
+}
 
-    }
-
-
-    .front-page-btns{
-         margin-left: 10rem;
-    }
 
     .front-page-btns button{
         padding: 1rem 2rem;
@@ -458,16 +515,21 @@ footer{
 
     .delicious-reservation{
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 5rem;
+        gap: 3rem;
         font-size: 1.5rem;
     }
 
-    .delicious-reservation button{
+    .line{
+        width: 15%;
+    }
+
+    /* .delicious-reservation button{
         padding: 2rem;
         font-size: 1.6rem;
-    }
+    } */
 
     .left-right{
         display: grid;
@@ -494,6 +556,16 @@ footer{
         border-bottom: none;
     }
 
+   .form-left input{
+    width: unset;
+   }
+
+   .textarea{
+    width: 10%;
+    padding: unset;
+   }
+
+
     footer{
         display: flex;
         justify-content: space-between;
@@ -502,11 +574,15 @@ footer{
     }
 
       footer i{
-        padding: 1.2rem;
+        padding: 1rem;
         font-size: 2rem;
         border-radius: 50%;
+        margin-right: 0.5rem;
 
     }
+ 
+    }
+
+   
 
  
-}

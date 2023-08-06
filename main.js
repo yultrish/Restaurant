@@ -25,3 +25,16 @@ closeIcon.addEventListener('click', function(){
         closeIcon.style.display = 'none';
         list.style.display = 'none';
 })
+
+function pageScroll() {
+  if (isClicked) {
+    list.style.display = 'none';
+    menuIcon.style.display = 'block';
+    closeIcon.style.display = 'none';
+    isClicked = false;
+  }
+}
+
+window.addEventListener('scroll', ()=>{
+    pageScroll()
+});
