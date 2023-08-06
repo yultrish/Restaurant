@@ -2,7 +2,7 @@
     --color-background: black;
     --color-light: aliceblue;
     --color-primary: #fe6601;
-    --color-secondary: #ffac4a;
+    --color-secondary: #ecb679;
     --border-radius-image: 50%;
 }
 *{
@@ -13,7 +13,7 @@
 
 body{
     background-color: unset;
-    font-family: sans-serif;
+     font-family: "Montserrat", sans-serif;
     line-height: 2rem;
 }
 
@@ -31,10 +31,8 @@ body{
      background-color: black;
      position: fixed;
      right: 0;
-     z-index: 2;
      top: 0;
      width: 100%;
-
 }
 
 .close-icon{
@@ -58,8 +56,9 @@ body{
 }
 
 .logo h3{
-    font-size: 2.2rem;
+    font-size: 2rem;
      font-family: Parisienne;
+     font-weight: lighter;
 }
 
 .nav-bar ul{
@@ -83,21 +82,18 @@ body{
     border-bottom: 2px solid var(--color-light);
 }
 
-.nav-bar ul li:hover{
-    color: var(--color-secondary);
-}
+
 
 .nav-bar a{
     text-decoration: none;
     color: var(--color-light);
     text-transform: uppercase;
+    font-weight: lighter;
+    /* font-size: 1rem; */
 }
 
 .nav-bar ul a:hover{
     color: var(--color-secondary);
-    padding: 0.5rem;
-    transform: scale(0.8rem);
-    transform: 30s ease-in-out;
 }
 
 .front-page{
@@ -106,7 +102,7 @@ body{
     background-attachment: fixed;
     /* height: 150vh; */
     white-space: nowrap;
-    padding-top: 50rem;
+    /* padding-top: 50rem; */
     
 }
 
@@ -114,7 +110,9 @@ body{
     padding: 0 2rem;
     color: var(--color-light);
     font-size: 1.2rem;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
+    padding: 36rem 0 0 13rem;
+    font-weight: lighter;
     /* text-align: center; */
 
 }
@@ -126,7 +124,7 @@ body{
 }
 
 .front-page-btns{
-      padding: 1rem 0 3rem 2rem;
+      padding: 1rem 0 4rem 3rem;
       display: flex;
       gap: 2rem;
 }
@@ -156,7 +154,7 @@ body{
     padding: 2rem;
     background-color: var(--color-primary);
     text-align: center;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     height: 30vh;
 }
 
@@ -164,7 +162,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
 }
 
 .reservation-btn{
@@ -406,7 +404,7 @@ footer{
         display: flex;
         justify-content: space-between;
         font-weight: bolder;
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
     }
     .logo span{
         display: none;
@@ -432,11 +430,20 @@ footer{
         white-space: nowrap;
     }
 
+    .nav-bar ul li:last-child{
+        border-bottom: unset;
+    }
+
     .front-page-slogan{
         display: inline-flex;
         flex-direction: column;
-        padding: 14rem 2rem 1rem 11.5rem;
-        font-size: 2rem;
+        /* padding: 2rem 2rem 1rem 11.5rem; */
+        
+    }
+
+    .front-page-slogan h3:first-child{
+        font-size: 5rem;
+
     }
 
 
