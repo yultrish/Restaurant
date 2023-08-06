@@ -85,7 +85,7 @@ body{
 
 .nav-bar ul li:hover{
     background-color: cadetblue;
-    transition: all 0.30s;
+    /* transition: all 0.30s; */
 }
 
 .nav-bar a{
