@@ -83,10 +83,10 @@ body{
     border-bottom: 2px solid var(--color-light);
 }
 
-.nav-bar ul li:hover{
+/* .nav-bar ul li:hover{
     background-color: cadetblue;
-    /* transition: all 0.30s; */
-}
+    transition: all 0.30s;
+} */
 
 .nav-bar a{
     text-decoration: none;
@@ -99,6 +99,7 @@ body{
 
 .nav-bar ul a:hover{
     color: var(--color-secondary);
+    background-color: cadetblue;
 }
 
 .front-page{
