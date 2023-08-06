@@ -346,6 +346,7 @@ margin: 0 1rem;
    padding: 1rem 0;
    font-size: 2.5rem;
    color: var(--color-secondary); 
+   margin-right: 2rem;
 }
 
 .icon-info span:last-child{
@@ -564,6 +565,7 @@ footer{
     width: 10%;
     padding: unset;
    }
+
 
 
     footer{
